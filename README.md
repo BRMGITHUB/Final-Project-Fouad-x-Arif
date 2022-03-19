@@ -14,7 +14,7 @@ VITE_PUBLIC_SUPABASE_ANON_KEY={supabaseApiPublicAnonKey}
 ```
 
 ## Create a content table in supabase 
-go to https://supabase.com/docs/guides/database/tables and follow the guide
+Go to https://supabase.com/docs/guides/database/tables and follow the guide to
 create a table with 5 rows : Fname (text), email(text), phone(text), message(text), user_id(uuid)
 
 
