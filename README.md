@@ -13,6 +13,11 @@ VITE_PUBLIC_SUPABASE_URL={supabaseApiUrl}
 VITE_PUBLIC_SUPABASE_ANON_KEY={supabaseApiPublicAnonKey}
 ```
 
+## Create a content table in supabase 
+go to https://supabase.com/docs/guides/database/tables and follow the guide
+create a table with 5 rows : Fname (text), email(text), phone(text), message(text), user_id(uuid)
+
+
 ## Start the server
 
 ```bash
