@@ -7,7 +7,7 @@
 		<div class="welcome">
 			<picture>
 				<source srcset="IMG_9431.jpg" type="image/webp" />
-				<img src="IMG_9431.jpg" alt="Welcome" />
+				<img src="IMG_9431.jpg" alt="Welcome"/>
 			</picture>
 		</div>
 		<br>
@@ -56,7 +56,6 @@
 		</div>
 	  </div>
 </section>
-
 	
 
 <style>

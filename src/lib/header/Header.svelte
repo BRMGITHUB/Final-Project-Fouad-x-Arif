@@ -20,9 +20,11 @@
 			<li class:active={$page.url.pathname === '/posts'}>
 				<a sveltekit:prefetch href="/posts">Posts</a>
 			</li>
-
+			<li class:active={$page.url.pathname === '/podcast'}>
+				<a sveltekit:prefetch href="/podcast">Podcast</a>
+			</li>
 			<li class:active={$page.url.pathname === '/contact'}>
-				<a sveltekit:prefetch href="/contact">COntact us</a>
+				<a sveltekit:prefetch href="/contact">Contact us</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
