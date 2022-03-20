@@ -64,37 +64,54 @@ export const onSubmit = async () => {
 
 <h1>Feel free to contact me using this form</h1>
 
-
-<form class="form-wrapper" on:submit|preventDefault={onSubmit}>
+<section>
   <div class="row">
     <div class="column">
-      <div class="form-element">
-        <label for="Name">Name</label>
-        <input required minlength="2" maxlength="20" id="Name" type="text" bind:value={state.username} placeholder="Family Name" />
-      </div>
-      <div class="form-element">
-        <label for="Email">Email</label>
-        <input required id="Email" type="email" bind:value={state.email} placeholder="Email" />
-      </div>
-      <div class="form-element">
-        <label for="PhoneNumber">Phone Number</label>
-        <input required id="PhoneNumber"  maxlength="15" type="tel" pattern=^[0-9]*$
-
-        bind:value={state.phone} placeholder="Phone Number" />
-      </div>
+      <h3>Don’t hesitate to reach out</h3><br>
+        <p>You can do so through my social links<br>
+        or the form on the right</p>
+        <br>
+        <h3>or</h3>
+        <br>
+        <p>If you are ever in Paris, hit me up for a cup of coffee and I will surely respond.
+      </p>
     </div>
-
-    <div class="column" style="display:flex; align-items:center">
-      <div class="form-element">
-        <label for="Comment">Your message: </label>
-        <textarea id="Comment" bind:value={state.message} style="height:220px" />
-      </div>
+    <div class="column">
+      <form class="form-wrapper" on:submit|preventDefault={onSubmit}>
+        <div class="row">
+          <div class="column">
+            <div class="form-element">
+              <label for="Name">Name</label>
+              <input required minlength="2" maxlength="20" id="Name" type="text" bind:value={state.username} placeholder="Family Name" />
+            </div>
+            <div class="form-element">
+              <label for="Email">Email</label>
+              <input required id="Email" type="email" bind:value={state.email} placeholder="Email" />
+            </div>
+            <div class="form-element">
+              <label for="PhoneNumber">Phone Number</label>
+              <input required id="PhoneNumber"  maxlength="15" type="tel" pattern=^[0-9]*$
+      
+              bind:value={state.phone} placeholder="Phone Number" />
+            </div>
+          </div>
+      
+          <div class="column" style="display:flex; align-items:center">
+            <div class="form-element">
+              <label for="Comment">Your message: </label>
+              <textarea id="Comment" bind:value={state.message} style="height:220px" />
+            </div>
+          </div>
+        </div>
+        <div style="display:flex; justify-content:end">
+          <button type="submit"style="width:fit-content">Send !</button>
+        </div>
+      </form>
     </div>
-  </div>
-  <div style="display:flex; justify-content:end">
-    <button type="submit"style="width:fit-content">Send !</button>
-  </div>
-</form>
+    </div>
+  </section>
+
+
 
 <style>
   h1 {
